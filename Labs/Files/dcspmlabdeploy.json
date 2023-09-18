@@ -79,7 +79,6 @@
                 "parameters": {
                     "adminUsername": { "value": "[parameters('adminUsername')]" },
                     "adminPassword": {"value": "[parameters('adminPassword')]"},
-                    "windowsmachineName": {"value": "[parameters('windowsmachineName')]"},
                     "linuxmachineName": {"value": "[parameters('linuxmachineName')]"},
                     "virtualNetworkName": {"value": "[parameters('virtualNetworkName')]"},
                     "storageAccountName": {"value": "[parameters('storageAccountName')]"},
@@ -101,6 +100,7 @@
                 "parameters": {
                     "adminUsername": { "value": "[parameters('adminUsername')]" },
                     "adminPassword": {"value": "[parameters('adminPassword')]"},
+                    "windowsmachineName": {"value": "[parameters('windowsmachineName')]"},
                     "virtualNetworkName": {"value": "[parameters('virtualNetworkName')]"},
                     "storageAccountName": {"value": "[parameters('storageAccountName')]"},
                     "keyVaultName": {"value": "[parameters('keyVaultName')]"},
