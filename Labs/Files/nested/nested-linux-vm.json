@@ -59,7 +59,13 @@
             "metadata": {
                 "description": "Location for all resources."
             }
-
+        },
+        //parameters for VM Name
+        "linuxmachineName": {
+            "type": "string",
+            "metadata": {
+                "description": "Linux VM Name"
+            }
         }
     },
     //variables
