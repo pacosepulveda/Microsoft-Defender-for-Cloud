@@ -58,8 +58,14 @@
             "defaultValue": "[resourceGroup().location]",
             "metadata": {
                 "description": "Location for all resources."
+            },
+        //parameters for VM Name
+        "virtualmachineName": {
+            "type": "string",
+            "metadata": {
+                "description": "Name of virtual machine must be unique to build DNS name"
+                }
             }
-
         }
     },
     //variables
@@ -67,7 +73,7 @@
         //"vnetID": "[resourceId('Microsoft.Network/virtualNetworks',parameters('virtualNetworkName'))]",
         "publicIPAddressName": "[concat(variables('vmName'), '-pip')]",
         "publicIPAddressType": "Dynamic",
-        "vmName": "dcspmlab-winsrv",
+        "vmName": "[parameters('virtualmachineName')]",
         "vmSize": "Standard_D2s_v3",
         //"virtualNetworkName": "asclab-vnet",
         //"networkSecurityGroupName": "myNSG",
