@@ -58,14 +58,14 @@
             "defaultValue": "[resourceGroup().location]",
             "metadata": {
                 "description": "Location for all resources."
-            },
-        }
+            }
+        },
         //parameters for VM Name
         "windowsmachineName": {
             "type": "string",
             "metadata": {
                 "description": "Windows VM Name"
-            },
+            }
         }
     },
     //variables
