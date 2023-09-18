@@ -48,8 +48,8 @@
         }
     },
     "variables": {
-        "linuxVmTemplateLink": "https://raw.githubusercontent.com/Azure/Microsoft-Defender-for-Cloud/main/Labs/Files/nested/nested-linux-vm.json",
-        "windowsVmTemplateLink": "https://raw.githubusercontent.com/Azure/Microsoft-Defender-for-Cloud/main/Labs/Files/nested/nested-windows-vm.json"
+        "linuxVmTemplateLink": "https://github.com/pacosepulveda/Microsoft-Defender-for-Cloud/raw/main/Labs/Files/nested/nested-linux-vm.json",
+        "windowsVmTemplateLink": "https://raw.githubusercontent.com/pacosepulveda/Microsoft-Defender-for-Cloud/main/Labs/Files/nested/nested-windows-vm.json"
     },
     "resources": [
         {
