@@ -45,7 +45,21 @@
             "metadata": {
                 "description": "This needs to be the same name as the Azure SQL Server you used in the previous deployment. Open the Resource Group hosting Lab environment and copy the SQL Server Name"
             }
-        }
+        },
+        //parameters for Windows VM Name
+        "windowsmachineName": {
+            "type": "string",
+            "metadata": {
+                "description": "Name of Windows virtual machine must be unique to build DNS name"
+                }
+            },
+        //parameters for Linux VM Name
+        "linuxmachineName": {
+            "type": "string",
+            "metadata": {
+                "description": "Name of Linux virtual machine must be unique to build DNS name"
+                }
+            }
     },
     "variables": {
         "linuxVmTemplateLink": "https://github.com/pacosepulveda/Microsoft-Defender-for-Cloud/raw/main/Labs/Files/nested/nested-linux-vm.json",
@@ -65,6 +79,8 @@
                 "parameters": {
                     "adminUsername": { "value": "[parameters('adminUsername')]" },
                     "adminPassword": {"value": "[parameters('adminPassword')]"},
+                    "windowsmachineName": {"value": "[parameters('windowsmachineName')]"},
+                    "linuxmachineName": {"value": "[parameters('linuxmachineName')]"},
                     "virtualNetworkName": {"value": "[parameters('virtualNetworkName')]"},
                     "storageAccountName": {"value": "[parameters('storageAccountName')]"},
                     "keyVaultName": {"value": "[parameters('keyVaultName')]"},
