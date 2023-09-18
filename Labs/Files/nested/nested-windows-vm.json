@@ -59,13 +59,6 @@
             "metadata": {
                 "description": "Location for all resources."
             },
-        //parameters for VM Name
-        "virtualmachineName": {
-            "type": "string",
-            "metadata": {
-                "description": "Name of virtual machine must be unique to build DNS name"
-                }
-            }
         }
     },
     //variables
